@@ -19,3 +19,11 @@ timeBts.addEventListener('click', event => {
         startGame();
     }
 });
+
+board.addEventListener('click', event => {
+    if (event.target.classList.contains('circle')) {
+        score++;
+        event.target.remove();
+        createCircle();
+    }
+});
