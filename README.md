@@ -1,3 +1,3 @@
 # Aim-game
 
-[Demo]()
+[Demo](https://nekrasovanatalya.github.io/Aim-game/)
