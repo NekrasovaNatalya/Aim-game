@@ -33,3 +33,9 @@ function startGame() {
     setTime(time);
     createCircle();
 }
+
+function gameOver() {
+    timer.parentNode.classList.add('hide');
+    board.innerHTML = `<h1>Cчет: <span class="primary">${score}</span></h1>`;
+}
+
