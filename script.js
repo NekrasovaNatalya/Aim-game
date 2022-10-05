@@ -27,3 +27,9 @@ board.addEventListener('click', event => {
         createCircle();
     }
 });
+
+function startGame() {
+    setInterval(decreaseTime, 1000);
+    setTime(time);
+    createCircle();
+}
