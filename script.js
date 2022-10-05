@@ -39,3 +39,14 @@ function gameOver() {
     board.innerHTML = `<h1>Cчет: <span class="primary">${score}</span></h1>`;
 }
 
+function decreaseTime() {
+    if (time === 0) {
+        gameOver();
+    } else {
+        let current = --time;
+    if (current < 10) {
+        current = `0${current}`;
+    }
+    setTime(current);
+    }
+}
